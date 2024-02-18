@@ -49,9 +49,15 @@ for(const seatId of seatsId ){
         AvailableSeatsElement.innerText=availableSeat
         
         selectSeatsElement.innerText=selectSeat
-        TotalPrice(selectSeat)
-        GrandTotal(selectSeat)
+       const RegularTotalPrice = TotalPrice(selectSeat)
+       
+        // GrandTotal(selectSeat)
+        
+        const grand=GrandTotal(RegularTotalPrice)
+        // GrandTotal(RegularTotalPrice)
+        
         WhichSeatSelected(seatId)
+        coupon(selectSeat,RegularTotalPrice,grand)
 
         // WhichSeatSelected(seatElement)
         
