@@ -48,8 +48,11 @@ for(const seatId of seatsId ){
         AvailableSeatsElement.innerText=availableSeat
         
         selectSeatsElement.innerText=selectSeat
+        TotalPrice(selectSeat)
+        GrandTotal(selectSeat)
+        
     })
-    
+   
    }
   
 //    const AvailableSeatsElement  = document.getElementById('available-seats')
