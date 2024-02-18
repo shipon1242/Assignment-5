@@ -41,7 +41,8 @@ for(const seatId of seatsId ){
     
     // const SeatText=seatElement.classList.add('bg-green')
     seatElement.addEventListener('click',function(event){
-        event.target.style.backgroundColor='green'
+        if(selectSeat<4){
+            event.target.style.backgroundColor='green'
         selectSeat=selectSeat+1;
         availableSeat=availableSeat-1;
        
@@ -50,20 +51,20 @@ for(const seatId of seatsId ){
         selectSeatsElement.innerText=selectSeat
         TotalPrice(selectSeat)
         GrandTotal(selectSeat)
+        WhichSeatSelected(seatId)
+
+        // WhichSeatSelected(seatElement)
+        
+
+        }
         
     })
    
    }
   
-//    const AvailableSeatsElement  = document.getElementById('available-seats')
-//     const AvailableSeats= AvailableSeatsElement.innerText
-//     console.log(AvailableSeats)
-    
+
 }
-// setBackgroundColor('A1')
 
-
-// availbe seat id check
 
 
 
