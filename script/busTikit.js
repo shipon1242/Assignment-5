@@ -42,7 +42,7 @@ for(const seatId of seatsId ){
     // const SeatText=seatElement.classList.add('bg-green')
     seatElement.addEventListener('click',function(event){
         if(selectSeat<4){
-            event.target.style.backgroundColor='green'
+            event.target.style.backgroundColor='#1DD100'
         selectSeat=selectSeat+1;
         availableSeat=availableSeat-1;
        

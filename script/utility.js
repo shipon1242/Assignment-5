@@ -56,7 +56,7 @@ if(selectSeat===4){
         
 
     }
-    else if(couponField.value==='couple 20'){
+    else if(couponField.value==='Couple 20'){
         const discount =(RegularTotalPrice*20)/100;
         grand=RegularTotalPrice-discount
         GrandTotal(grand)
