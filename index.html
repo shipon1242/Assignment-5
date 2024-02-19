@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P-pribohon</title>
-    <!-- deisy ui and taiwind css -->
-    
+    <!-- css -->
+<link rel="stylesheet" href="script/styles/styles.css">
+    <!--deisy ui and taiwind css  -->
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -145,11 +146,11 @@
   <div class=" w-11/12 mx-auto space-y-8">
       <div class="flex justify-between w-[700px]">
           <h4>Route</h4>
-          <h4>Dhaka-sylet</h4>
+          <h4 class="text-lg font-medium text-black">Dhaka-sylet</h4>
       </div>
       <div class="flex justify-between w-[700px] ">
           <h4>Departure Time</h4>
-          <h4>9:00 PM</h4>
+          <h4 class="text-lg font-medium text-black">9:00 PM</h4>
       </div>
       <div class="flex justify-between w-[700px]">
           <button class="btn">Boarding Point - Laxmipur</button>
@@ -160,8 +161,10 @@
 
 
 <!-- seat plan section -->
+
 <section class="w-11/12 mx-auto bg-white mt-8 px-6 ">
-  <div class="flex space-x-48 pt-8">
+  <h2 class="text-2xl font-semibold text-black pb-10 pt-8">Select Your Seat</h2>
+  <div class="flex space-x-48 pb-4">
    <div class="flex gap-2"> 
     <img src="images/seat-gray.png" alt="">
     <h2 class="text-lg font-medium text-[#03071280]"> Available</h2>
@@ -263,44 +266,43 @@
 
 
 <!-- fare taka part -->
+
 <div id="">
-    <h2>Select Your Seat</h2>
-    <div id="parentma" class="grid grid-cols-3 space-x-40 space-y-3  ">
-        <h1 class="ml-28 flex">Seat<button class="btn bg-[#1DD100] text-white"><span id="select-seat">0</span></button></h1>
-        <h3>class</h3>
-        <h3>price</h3>
-        <!-- <h3>C2</h3> -->
-        <!-- <h3>Economy</h3> -->
-        <!-- <h3>550</h3> -->
-        <!-- <h3>C3</h3> -->
-        <!-- <h3>Economy</h3> -->
-        <!-- <h3>550</h3> -->
-       
+  
+    <div id="parentma" class=" pr-10 grid grid-cols-3 space-x-40 space-y-3 px-6   ">
+        <h1 class=" pl-24  flex text-xl font-medium text-black gap-2">Seat<button class="btn text-xl  bg-[#1DD100] text-white"><span id="select-seat">0</span></button></h1>
+        <!-- <h1 class="ml-28 flex text-base font-medium text-black">Seat<span class="bg-[#1DD100] text-white px-4 -py-3" id="select-seat">0</span></h1> -->
+        <h3 class="text-xl font-medium text-black ">class</h3>
+        <h3 class="text-xl font-medium text-black">price</h3>
+        
 
     </div>
+  
     <hr>
-    <div class="flex justify-between pt-4">
+    <section class="bg-[#F7F8F8] px-6 pb-4">
+    <div class="flex justify-between pt-4 text-lg font-medium text-black">
         <h1>Total Price</h1>
         <h2>BDT <span id="total-price">0</span></h2>
     </div>
     <!-- cuopon  -->
-    <div id="coupon-parent" class="flex justify-between pt-4">
-        <input id="couponField" class="border w-full" type="text" placeholder="Have any Coupon?"></p>
+    <div id="coupon-parent" class="flex justify-between pt-4 bg-">
+        <input id="couponField" class="border w-full h-12 px-10 rounded-2xl" type="text" placeholder="Have any Coupon?">
         <button disabled id="couponBtn" class="btn bg-[#1DD100] text-white ">Apply</button>
     </div>
     <!-- grand price -->
-    <div class="flex justify-between mt-4">
+    <div class="flex justify-between mt-4 text-lg font-medium text-black">
         <h2>Grand Total</h2>
         <h2>BDT <span id="grand-total">0</span></h2>
     </div>
+  </section>
     <!-- passenger information-->
     <div class="space-y-4 mt-8">
-        <h4>Passenger Name*</h4>
-        <input id="name" class="border w-full" type="text" placeholder="Enter your name">
-        <h4>Phone Number*</h4>
-        <input id="phone-number" class="border w-full" type="number" placeholder="Enter your Phone number">
-        <h4>Email ID</h4>
-        <input class="border w-full" type="email" placeholder="Enter your Email">
+        <h4 class="text-lg font-semibold text-black">Passenger Name*</h4>
+        <input id="name" class="border w-full h-12 px-10" type="text" placeholder="Enter your name">
+        <h4 class="text-lg font-semibold text-black">Phone Number*</h4>
+        <input id="phone-number" class="border w-full  h-12 px-10" type="number" placeholder="Enter your Phone number">
+        <h4 class="text-lg font-semibold text-black">Email ID</h4>
+        <input class="border w-full h-12 px-10" type="email" placeholder="Enter your Email">
         <!-- <button disabled id="next-btn" class="  btn w-full bg-[#1DD100] text-white">Next</button> -->
         <!-- Open the modal using ID.showModal() method -->
 
