@@ -11,7 +11,7 @@
 
 </head>
 <body>
-  <section id="success-modal" class="bg-[#F2F1F1] flex justify-center items-center min-h-[856px] border-2 w-11/12 mx-auto  rounded-lg hidden">
+  <!-- <section id="success-modal" class="bg-[#F2F1F1] flex justify-center items-center min-h-[856px] border-2 w-11/12 mx-auto  rounded-lg hidden">
 
     <div class="bg-[#FFFFFF] border-4 border-dashed min-w-[718px] min-h-[450px] flex flex-col justify-center items-center px-20 space-y-8 mx-72 my-40">
       <img src="images/success.png" alt="">
@@ -25,10 +25,10 @@
      
         
     </div>
-  </section>
+  </section> -->
 
 
-  <section id="main-site" class="">
+  
     
     <header class="w-11/12 mx-auto">
         <!-- nav bar -->
@@ -119,29 +119,29 @@
             </div>
         </section> -->
 <!-- tikit section -->
-        <section id="ticketSection" class="w-11/12 mx-auto">
-            <h2 class="text-center">P.H Paribahan</h2>
-            <p class="text-center">if you purchase ticket please follow your codition in below</p>
+        <section id="ticketSection" class="mx-auto border-t-2 border-[#1DD100] rounded-t-3xl bg-[#F7F8F8] pt-28 mt-28">
+            <h2 class="text-center text-4xl font-extrabold">P.H Paribahan</h2>
+            <p class=" pt-6 text-center text-lg  font-normal">if you purchase ticket please follow your codition in below</p>
 <!-- root and price div -->
-<div class="flex justify-between">
+<div class="flex justify-between w-11/12 mt-20 mx-auto">
     <div class="flex space-x-40 w-full ">
-        <div class="flex gap-4"><img class="w-16 h-12" src="images/bus-logo.png" alt="">
-            <div class="">
+        <div class="flex gap-4"><img class="w-16 h-12 mt-4" src="images/bus-logo.png" alt="">
+            <div class="space-y-3">
                 
-                <h2>Greenline Paribahan</h2>
-                <p>Coach-009-WEB ! AC_Business</p>
+                <h2 class="text-4xl font-bold text-black">Greenline Paribahan</h2>
+                <p class="text-lg font-normal text-[#03071299]">Coach-009-WEB ! AC_Business</p>
             </div></div>
 
         
-        <div class="flex justify-end"><button class="btn "><img src="images/seat-green.png" alt=""><span id="available-seats">40</span> seats left</button></div>
+        <div class="flex justify-end"><button class="btn px-4  bg-[#1DD10026] "><img class=" border-1 border-dashed border-gray-300" src="images/seat-green.png" alt=""><span id="available-seats" class="text-lg font-medium text-[#1DD100]">40</span> <span class="text-lg font-medium text-[#1DD100]" >seats left</span></button></div>
         
     </div>
     <!-- seat price taka -->
 
-<div class=" w-[200px] p-10 ">
-<img src="images/fare.png" alt="">
-<h2><span>550</span> Taka</h2>
-<p>Per Seat</p>
+<div class="  w-[300px] p-10 space-y-6">
+<img class="min-w-10 min-h-10 text-center" src="images/fare.png" alt="">
+<h2 class="text-3xl font-bold text-black ">550 Taka</h2>
+<p class="text-2xl font-semibold text-[#03071299]">Per Seat</p>
 </div>
 
 
@@ -286,10 +286,39 @@
         <h4>Passenger Name*</h4>
         <input id="name" class="border w-full" type="text" placeholder="Enter your name">
         <h4>Phone Number*</h4>
-        <input class="border w-full" type="number" placeholder="Enter your Phone number">
+        <input id="phone-number" class="border w-full" type="number" placeholder="Enter your Phone number">
         <h4>Email ID</h4>
         <input class="border w-full" type="email" placeholder="Enter your Email">
-        <button disabled id="next-btn" class="  btn w-full bg-[#1DD100] text-white">Next</button>
+        <!-- <button disabled id="next-btn" class="  btn w-full bg-[#1DD100] text-white">Next</button> -->
+        <!-- Open the modal using ID.showModal() method -->
+
+        <!-- modal -->
+<button id="next-btn" disabled  class="btn w-full text-xl font-bold bg-[#27AE60] text-white" onclick="my_modal_5.showModal()">Next</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    
+
+    <div class="bg-[#FFFFFF] border-4 border-dashed  flex flex-col justify-center items-center p-8 space-y-4 mx-8 my-8">
+      <img src="images/success.png" alt="">
+      <h2 class="text-2xl font-bold text-[#27AE60]">SUCCESS</h2>
+      <div class="text-center space-y-4"> <p class="text-xl font-medium text-[#4A4A4A] ">Thank you for Booking Our Bus Seats. 
+        We are working hard to find the best service and deals for you. 
+        </p>
+        <p class="text-xl font-light text-[#4A4A4A]">Shortly you will find a confirmation in your email.</p>
+        <button class="btn px-20  rounded-full text-xl font-semibold bg-[#27AE60] text-white">Continue</button>
+      </div>
+     
+        
+    </div>
+ 
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        
+      </form>
+    </div>
+  </div>
+</dialog>
     </div>
 </div>
 
@@ -300,7 +329,7 @@
         </section>
     </main>
     <footer></footer>
-  </section>
+  
     <script src="script/busTikit.js"></script>
     <script src="script/utility.js"></script>
 </body>

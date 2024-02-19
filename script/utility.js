@@ -76,18 +76,20 @@ if(selectSeat===4){
 }
 // pasenger booking complite
 function passengerBooked(selectSeat){
+    const phoneNumber=document.getElementById('phone-number')
     if(selectSeat>=1){
 
         const getNext=document.getElementById('next-btn')
-const getModal=document.getElementById('success-modal')
-const getMainPage=document.getElementById('main-site')
-getNext.removeAttribute('disabled')
-getNext.addEventListener('click',function(){
-    getMainPage.classList.add('hidden')
-    getModal.classList.remove('hidden')
-})
+// const getModal=document.getElementById('success-modal')
+// const getMainPage=document.getElementById('main-site')
+getNext.removeAttribute('disabled') 
+// getNext.addEventListener('click',function(){
+    // getMainPage.classList.add('hidden')
+    // getModal.classList.remove('hidden')
+// })
 
     }
+    
 
 
 
