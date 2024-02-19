@@ -39,8 +39,12 @@ function coupon(selectSeat,RegularTotalPrice,grand){
     const couponParent=document.getElementById('coupon-parent')
     const applyBtn=document.getElementById('couponBtn')
     const couponField=document.getElementById('couponField')
+    if(selectSeat===4){
+        applyBtn.removeAttribute('disabled')
+    }
     applyBtn.addEventListener('click',function(){
 if(selectSeat===4){
+    
     if(couponField.value==='NEW15'){
         const discount =(RegularTotalPrice*15)/100;
         grand=RegularTotalPrice-discount
@@ -62,8 +66,30 @@ if(selectSeat===4){
     
 
 
-
+    
 }
 
-    })
+
+    }
+    )
+   
+}
+// pasenger booking complite
+function passengerBooked(selectSeat){
+    if(selectSeat>=1){
+
+        const getNext=document.getElementById('next-btn')
+const getModal=document.getElementById('success-modal')
+const getMainPage=document.getElementById('main-site')
+getNext.removeAttribute('disabled')
+getNext.addEventListener('click',function(){
+    getMainPage.classList.add('hidden')
+    getModal.classList.remove('hidden')
+})
+
+    }
+
+
+
+
 }

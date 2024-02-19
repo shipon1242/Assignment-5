@@ -60,16 +60,23 @@ for(const seatId of seatsId ){
         coupon(selectSeat,RegularTotalPrice,grand)
 
         // WhichSeatSelected(seatElement)
+
         
 
         }
+        passengerBooked(selectSeat)
         
     })
    
    }
+   
   
 
 }
+// const getNameFieldById=document.getElementById('name')
+// if(typeof getNameFieldById.value !=='string'){
+//     'please your name'
+// }
 
 
 
