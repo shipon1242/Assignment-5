@@ -10,7 +10,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
+<body class="bg-[#F7F8F8]">
   <!-- <section id="success-modal" class="bg-[#F2F1F1] flex justify-center items-center min-h-[856px] border-2 w-11/12 mx-auto  rounded-lg hidden">
 
     <div class="bg-[#FFFFFF] border-4 border-dashed min-w-[718px] min-h-[450px] flex flex-col justify-center items-center px-20 space-y-8 mx-72 my-40">
@@ -30,9 +30,9 @@
 
   
     
-    <header class="w-11/12 mx-auto">
+    <header class="w-11/12 mx-auto mt-8">
         <!-- nav bar -->
-        <nav>
+        <nav  class="mb-6">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -84,9 +84,7 @@
         <section class="offerSection w-11/12 mx-auto">
             <h2 class="text-4xl font-semibold text-black text-center mt-36 mb-14">Best offers for you</h2>
             <div class="parent-div flex space-x-6">
-                
-                   
-                  
+              
                     <div class="card-body items-center text-center bg-[#FFBF0F] rounded-3xl grid grid-cols-2 ">
                      <div class=""> <h2 class=" text-4xl font-extrabold text-[#030712CC] pb-2">15% OFF</h2>
                         <p class="text-2xl font-medium text-[#030712CC] pb-4">
@@ -119,7 +117,7 @@
                    
         </section>
 <!-- tikit section -->
-        <section id="ticketSection" class="mx-auto border-t-2 border-[#1DD100] rounded-t-3xl bg-[#F7F8F8] pt-28 mt-28">
+        <section id="ticketSection" class="mx-auto border-t-2 border-[#1DD100] rounded-t-3xl  pt-28 mt-28">
             <h2 class="text-center text-4xl font-extrabold">P.H Paribahan</h2>
             <p class=" pt-6 text-center text-lg  font-normal">if you purchase ticket please follow your codition in below</p>
 <!-- root and price div -->
@@ -137,36 +135,38 @@
         
     </div>
     <!-- seat price taka -->
+<section class="h-full justify-center items-center ">
+  <div class="flex flex-col justify-center items-center  w-[300px]  space-y-6 ">
+  <img class="min-w-10 min-h-10 flex justify-center" src="images/fare.png" alt="">
+  <h2 class="text-3xl font-bold text-black ">550 Taka</h2>
+  <p class="text-2xl font-semibold text-[#03071299]">Per Seat</p>
+  </div>
+  </div>
+  <div class=" w-11/12 mx-auto space-y-8">
+      <div class="flex justify-between w-[700px]">
+          <h4>Route</h4>
+          <h4>Dhaka-sylet</h4>
+      </div>
+      <div class="flex justify-between w-[700px] ">
+          <h4>Departure Time</h4>
+          <h4>9:00 PM</h4>
+      </div>
+      <div class="flex justify-between w-[700px]">
+          <button class="btn">Boarding Point - Laxmipur</button>
+          <button class="btn">Dropping Point - Bogura</button>
+          <button class="btn">Est. Time - 11 Hour</button>
+      </div>
+  </div></section>
 
-<div class="flex flex-col justify-center items-center  w-[300px] p-10 space-y-6">
-<img class="min-w-10 min-h-10 flex justify-center" src="images/fare.png" alt="">
-<h2 class="text-3xl font-bold text-black ">550 Taka</h2>
-<p class="text-2xl font-semibold text-[#03071299]">Per Seat</p>
-</div>
 
-
-</div>
-<div class="space-y-8">
-    <div class="flex gap-20">
-        <h4>Route</h4>
-        <h4>Dhaka-sylet</h4>
-    </div>
-    <div class="flex gap-20">
-        <h4>Departure Time</h4>
-        <h4>9:00 PM</h4>
-    </div>
-    <div class="flex gap-5">
-        <button class="btn">Boarding Point - Laxmipur</button>
-        <button class="btn">Dropping Point - Bogura</button>
-        <button class="btn">Est. Time - 11 Hour</button>
-    </div>
-</div>
-
-<!-- seat plan -->
-<div class="parent pt-20 grid grid-cols-2">
+<!-- seat plan section -->
+<section class="w-11/12 mx-auto bg-white mt-8 px-6 ">
+  <h2>Select Your Seat</h2>
+<div class="parent pt-10 grid grid-cols-2">
 <!-- seat position -->
 
 <div class="flex gap-5 ">
+  
     <div class=" grid grid-rows-10 space-y-6">
         <h1>A</h1>
         <h1>B</h1>
@@ -325,7 +325,7 @@
 </div>
 <!-- cuppon apply section -->
 
-
+</section>
         </section>
     </main>
     <footer></footer>
